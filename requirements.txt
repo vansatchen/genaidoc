@@ -1,0 +1,14 @@
+langchain
+qdrant-client
+PyPDF2
+langchain-text-splitters
+langchain_huggingface
+sentence_transformers
+langchain-qdrant
+fastapi~=0.111.0
+pydantic==1.10.11
+uvicorn
+python-docx
+python-pptx
+tiktoken
+openai
