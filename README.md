@@ -1,6 +1,8 @@
 # genaidoc
 This is adapted version of [Local-GenAI Search](https://github.com/nikolamilosevic86/local-genAI-search) for use with [LLaMA.cpp HTTP Server](https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md) or [OpenAI Compatible Web Server](https://github.com/abetlen/llama-cpp-python?tab=readme-ov-file#openai-compatible-web-server)
 
+The main goal of the project is that it lets user ask questions about content of their local files, which it answers in concise manner with referencing relevant documents that can be then opened.
+
 ## How to run
 Download the repository:
 ```
