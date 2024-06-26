@@ -42,7 +42,7 @@ async def root():
 def search(Item:Item):
     query = Item.query
     search_result = qdrant.similarity_search(
-        query=query, k=10
+        query=query, k=5
     )
     i = 0
     list_res = []
@@ -55,7 +55,7 @@ def search(Item:Item):
 async def ask_localai(Item:Item):
     query = Item.query
     search_result = qdrant.similarity_search(
-        query=query, k=10
+        query=query, k=5
     )
     i = 0
     list_res = []
