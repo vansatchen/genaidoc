@@ -45,10 +45,12 @@ def main_indexing(mypath):
     )
     client = QdrantClient(path="qdrant/")
     collection_name = "MyCollection"
+
+    # Comment 3 lines below to save exists collection and just to add documents without reindex existing
     if client.collection_exists(collection_name):
         client.delete_collection(collection_name)
-
     client.create_collection(collection_name,vectors_config=VectorParams(size=768, distance=Distance.DOT))
+
     qdrant = Qdrant(client, collection_name, hf)
     print("Indexing...")
     onlyfiles = get_files(mypath)
